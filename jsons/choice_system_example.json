@@ -1,0 +1,98 @@
+{
+  "portraitDialogue": {
+	"player_01": {
+	  "line_0": "Welcome here a choice dialogue system.",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_1": "This is a second line.",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	},
+	"kingdoma_01": {
+	  "line_0": "So it's my turn to make a choice?",
+	  "expression_0": "test_assets_v02/KingdomA_portrait_test"
+	},
+	"player_02": {
+	  "line_0": "Correct?",
+	  "expression_0": "test_assets_v02/Player_portrait_test"
+	},
+	"kingdoma_02": {
+	  "line_0": "...?",
+	  "expression_0": "test_assets_v02/KingdomA_portrait_test"
+	},
+	"choice_moment": {
+	  "choice_0": {
+		"prompt": "What do you do with the apple?",
+		"options": [
+		  {
+			"text": "Pick up the apple carefully",
+			"dominance_change": 0.1,
+			"reputation_change": 0.2,
+			"next_dialogue": "kingdoma_respectful"
+		  },
+		  {
+			"text": "Leave the apple there",
+			"dominance_change": -0.1,
+			"reputation_change": 0.1,
+			"next_dialogue": "kingdoma_neutral"
+		  },
+		  {
+			"text": "Throw the apple at the Player",
+			"dominance_change": 0.3,
+			"reputation_change": -0.3,
+			"next_dialogue": "kingdoma_shocked"
+		  }
+		]
+	  }
+	},
+	"kingdoma_respectful": {
+	  "line_0": "You show great respect and wisdom.",
+	  "expression_0": "test_assets_v02/KingdomA_portrait_test",
+	  "line_1": "Perhaps you're ready for something more advanced?",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	},
+	"kingdoma_neutral": {
+	  "line_0": "Second option dog.",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_1": "it's a second line.",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	},
+	"kingdoma_shocked": {
+	  "line_0": "Third Option dog!",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_1": "Don't worry.",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	},
+	"player_response": {
+	  "line_0": "This is my last response.",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "choice_1": {
+		"prompt": "How do you respond to this lesson?",
+		"options": [
+		  {
+			"text": "I understand and will learn from this",
+			"dominance_change": 0.0,
+			"reputation_change": 0.1,
+			"next_dialogue": "test_assets_v02/Player_portrait_test"
+		  },
+		  {
+			"text": "I don't see why this matters",
+			"dominance_change": 0.1,
+			"reputation_change": -0.2,
+			"next_dialogue": "test_assets_v02/Player_portrait_test"
+		  }
+		]
+	  }
+	},
+	"player_approval": {
+	  "line_0": "Excellent. Wisdom comes to those who seek it.",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_1": "You may proceed to the next lesson when ready.",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	},
+	"player_disappointment": {
+	  "line_0": "Hmm. Perhaps you need more time to reflect.",
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_1": "Come back when you're ready to take this seriously.",
+	  "expression_1": "test_assets_v02/Player_portrait_test"
+	}
+  }
+} 

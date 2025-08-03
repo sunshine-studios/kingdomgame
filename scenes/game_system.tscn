@@ -1,0 +1,99 @@
+[gd_scene load_steps=2 format=3 uid="uid://debs41es4lhth"]
+
+[ext_resource type="Script" uid="uid://c4wlrxuxasdy8" path="res://scripts/global_game_state.gd" id="1_smko5"]
+
+[node name="game_system" type="Node2D"]
+script = ExtResource("1_smko5")
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="StatsContainer" type="HBoxContainer" parent="."]
+offset_left = 514.0
+offset_top = 43.0
+offset_right = 1307.0
+offset_bottom = 100.0
+
+[node name="GoldContainer" type="VBoxContainer" parent="StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoldLabel" type="Label" parent="StatsContainer/GoldContainer"]
+layout_mode = 2
+text = "Gold"
+horizontal_alignment = 1
+
+[node name="GoldValue" type="Label" parent="StatsContainer/GoldContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="ResourcesContainer" type="VBoxContainer" parent="StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResourcesLabel" type="Label" parent="StatsContainer/ResourcesContainer"]
+layout_mode = 2
+text = "Resources"
+horizontal_alignment = 1
+
+[node name="ResourcesValue" type="Label" parent="StatsContainer/ResourcesContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="HappinessContainer" type="VBoxContainer" parent="StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HappinessLabel" type="Label" parent="StatsContainer/HappinessContainer"]
+layout_mode = 2
+text = "Happiness"
+horizontal_alignment = 1
+
+[node name="HappinessValue" type="Label" parent="StatsContainer/HappinessContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="TurnContainer" type="VBoxContainer" parent="StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TurnLabel" type="Label" parent="StatsContainer/TurnContainer"]
+layout_mode = 2
+text = "Turn"
+horizontal_alignment = 1
+
+[node name="TurnValue" type="Label" parent="StatsContainer/TurnContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="GoldValueTest" type="Button" parent="."]
+offset_left = 407.0
+offset_top = 454.0
+offset_right = 535.0
+offset_bottom = 485.0
+text = "Gold Value Test"
+
+[node name="ResourceValueTest" type="Button" parent="."]
+offset_left = 385.0
+offset_top = 490.0
+offset_right = 560.0
+offset_bottom = 521.0
+text = "Resources  Value Test"
+
+[node name="HappinessValueTest" type="Button" parent="."]
+offset_left = 385.0
+offset_top = 530.0
+offset_right = 558.0
+offset_bottom = 561.0
+text = "Happiness Value Test"
+
+[node name="TurnValueTest" type="Button" parent="."]
+offset_left = 383.0
+offset_top = 569.0
+offset_right = 556.0
+offset_bottom = 600.0
+text = "Game Turn Test"
+
+[connection signal="pressed" from="GoldValueTest" to="." method="_on_gold_value_test_pressed"]
+[connection signal="pressed" from="ResourceValueTest" to="." method="_on_resource_value_test_pressed"]
+[connection signal="pressed" from="HappinessValueTest" to="." method="_on_happiness_value_test_pressed"]
+[connection signal="pressed" from="TurnValueTest" to="." method="_on_turn_value_test_pressed"]

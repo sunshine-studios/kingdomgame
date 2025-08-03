@@ -1,0 +1,20 @@
+{
+  "portraitDialogue": {
+    "player_0": {
+      "expression_0": "test_assets_v02/Player_portrait_test",
+      "line_0": "Well I guess we meet in game finally."
+    },
+    "kingdoma_0": {
+      "expression_0": "test_assets_v02/KingdomA_portrait_test",
+      "line_0": "Who are they?!"
+    },
+    "kingdomb_01": {
+      "expression_0": "test_assets_v02/KingdomB_portrait_test",
+      "line_0": "Is that anyway to address me?"
+    },
+    "kingdomc_01": {
+      "expression_0": "test_assets_v02/KingdomC_portrait_test",
+      "line_0": "I suppose it's like this..."
+    }
+  }
+} 

@@ -1,0 +1,43 @@
+{
+  "turn": 1,
+  "title": "Kingdom Policy Decisions - Turn 1",
+  "description": "Choose a policy for your kingdom. Each decision will affect your resources.",
+  "policies": [
+	{
+	  "id": "policy_a",
+	  "title": "Trade Expansion",
+	  "description": "Focus on expanding trade routes to increase gold income, but reduce our supply reserves.",
+	  "button_text": "Expand Trade",
+	  "effects": {
+		"gold": 2,
+		"resources": -2,
+		"happiness": 0
+	  },
+	  "flavor_text": "Our merchants report increased profits from new trade agreements."
+	},
+	{
+	  "id": "policy_b", 
+	  "title": "Festival Investment",
+	  "description": "Organize kingdom-wide festivals to boost morale, funded from the royal treasury.",
+	  "button_text": "Host Festivals",
+	  "effects": {
+		"gold": -2,
+		"resources": 0,
+		"happiness": 2
+	  },
+	  "flavor_text": "The people celebrate in the streets, their spirits lifted by grand festivities."
+	},
+	{
+	  "id": "policy_c",
+	  "title": "Resource Stockpiling", 
+	  "description": "Prioritize gathering and storing supplies, though it may cause some public discontent.",
+	  "button_text": "Stockpile Resources",
+	  "effects": {
+		"gold": 0,
+		"resources": 2,
+		"happiness": -2
+	  },
+	  "flavor_text": "The royal warehouses overflow with goods, though citizens grumble about rationing."
+	}
+  ]
+}

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://drjgplkqtmqry"]
+
+[ext_resource type="Script" uid="uid://biy0tw6pcmo84" path="res://scripts/test_portrait_dialogue.gd" id="1_t4m2l"]
+
+[node name="TestPortraitDialogue" type="Node2D"]
+script = ExtResource("1_t4m2l")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Instructions" type="Label" parent="UI"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -120.0
+offset_right = 600.0
+offset_bottom = -20.0
+text = "Press 1, 2, or 3 to test different dialogues
+ESC to clear current dialogue
+Click anywhere to advance dialogue"

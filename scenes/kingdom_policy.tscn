@@ -1,0 +1,193 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg3f2elkovwlu"]
+
+[ext_resource type="Script" uid="uid://b40x270wahs2d" path="res://scripts/policy_scene.gd" id="1_def456"]
+
+[node name="PolicyScene" type="Node2D"]
+script = ExtResource("1_def456")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.15, 0.15, 0.25, 1)
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="MainContainer" type="Control" parent="UILayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContentContainer" type="VBoxContainer" parent="UILayer/MainContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+text = "Kingdom Policy Decisions - Turn 1"
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+text = "Choose a policy for your kingdom. Each decision will affect your resources."
+horizontal_alignment = 1
+
+[node name="Separator1" type="HSeparator" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+
+[node name="StatsContainer" type="HBoxContainer" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+
+[node name="GoldContainer" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoldLabel" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/GoldContainer"]
+layout_mode = 2
+text = "Gold"
+horizontal_alignment = 1
+
+[node name="GoldValue" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/GoldContainer"]
+layout_mode = 2
+text = "50"
+horizontal_alignment = 1
+
+[node name="ResourcesContainer" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResourcesLabel" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/ResourcesContainer"]
+layout_mode = 2
+text = "Resources"
+horizontal_alignment = 1
+
+[node name="ResourcesValue" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/ResourcesContainer"]
+layout_mode = 2
+text = "50"
+horizontal_alignment = 1
+
+[node name="HappinessContainer" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/StatsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HappinessLabel" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/HappinessContainer"]
+layout_mode = 2
+text = "Happiness"
+horizontal_alignment = 1
+
+[node name="HappinessValue" type="Label" parent="UILayer/MainContainer/ContentContainer/StatsContainer/HappinessContainer"]
+layout_mode = 2
+text = "50"
+horizontal_alignment = 1
+
+[node name="Separator2" type="HSeparator" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+
+[node name="PolicyChoicesContainer" type="HBoxContainer" parent="UILayer/MainContainer/ContentContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PolicyA" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PolicyABackground" type="ColorRect" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyA"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.3, 0.6, 0.9, 0.8)
+
+[node name="PolicyATitle" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyA"]
+layout_mode = 2
+text = "Trade Expansion"
+horizontal_alignment = 1
+
+[node name="PolicyADescription" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyA"]
+layout_mode = 2
+text = "Focus on expanding trade routes to increase gold income."
+autowrap_mode = 2
+
+[node name="PolicyAEffects" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyA"]
+layout_mode = 2
+text = "Gold +2, Resources -2"
+horizontal_alignment = 1
+
+[node name="PolicyAButton" type="Button" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyA"]
+layout_mode = 2
+text = "Expand Trade"
+
+[node name="PolicyB" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PolicyBBackground" type="ColorRect" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyB"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.9, 0.6, 0.3, 0.8)
+
+[node name="PolicyBTitle" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyB"]
+layout_mode = 2
+text = "Festival Investment"
+horizontal_alignment = 1
+
+[node name="PolicyBDescription" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyB"]
+layout_mode = 2
+text = "Organize kingdom-wide festivals to boost morale."
+autowrap_mode = 2
+
+[node name="PolicyBEffects" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyB"]
+layout_mode = 2
+text = "Happiness +2, Gold -2"
+horizontal_alignment = 1
+
+[node name="PolicyBButton" type="Button" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyB"]
+layout_mode = 2
+text = "Host Festivals"
+
+[node name="PolicyC" type="VBoxContainer" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PolicyCBackground" type="ColorRect" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyC"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.6, 0.9, 0.3, 0.8)
+
+[node name="PolicyCTitle" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyC"]
+layout_mode = 2
+text = "Resource Stockpiling"
+horizontal_alignment = 1
+
+[node name="PolicyCDescription" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyC"]
+layout_mode = 2
+text = "Prioritize gathering and storing supplies."
+autowrap_mode = 2
+
+[node name="PolicyCEffects" type="Label" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyC"]
+layout_mode = 2
+text = "Resources +2, Happiness -2"
+horizontal_alignment = 1
+
+[node name="PolicyCButton" type="Button" parent="UILayer/MainContainer/ContentContainer/PolicyChoicesContainer/PolicyC"]
+layout_mode = 2
+text = "Stockpile Resources"
+
+[node name="BackButton" type="Button" parent="."]
+z_index = 1
+offset_left = 22.0
+offset_top = 15.0
+offset_right = 163.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+text = "Back Button!"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

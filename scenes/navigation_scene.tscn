@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://b11gnaa3vroip"]
+
+[ext_resource type="Script" uid="uid://cy2i5fm1xowbh" path="res://scripts/navigation_scene.gd" id="1_2im8v"]
+
+[node name="NavigationScene" type="Node2D"]
+script = ExtResource("1_2im8v")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.2, 0.3, 0.4, 1)
+
+[node name="LeftButton" type="Button" parent="."]
+offset_top = -6.0
+offset_right = 673.0
+offset_bottom = 1083.0
+size_flags_horizontal = 3
+text = "Coming Soon"
+
+[node name="MiddleButton" type="Button" parent="."]
+offset_left = 667.0
+offset_top = -11.0
+offset_right = 1246.0
+offset_bottom = 1081.0
+size_flags_horizontal = 3
+text = "Kingdom Policy"
+
+[node name="RightButton" type="Button" parent="."]
+offset_left = 1239.0
+offset_top = 7.0
+offset_right = 1919.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+text = "Coming Soon"
+
+[connection signal="pressed" from="LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="MiddleButton" to="." method="_on_middle_button_pressed"]
+[connection signal="pressed" from="RightButton" to="." method="_on_right_button_pressed"]

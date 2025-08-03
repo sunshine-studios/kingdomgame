@@ -1,0 +1,36 @@
+{
+  "portraitDialogue": {
+	"player_0": {
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_0": "Welcome! This is the Player speaking from the template dialogue system.",
+	  "expression_1": "test_assets_v02/Player_portrait_test",
+	  "line_1": "You can easily duplicate this scene and change the JSON file to create new scenes.",
+	  "expression_2": "test_assets_v02/Player_portrait_test",
+	  "line_2": "Just update the export variables in the script to point to your new JSON!"
+	},
+	"kingdoma_0": {
+	  "expression_0": "test_assets_v02/KingdomA_portrait_test",
+	  "line_0": "Hello! I'm from Kingdom A and this template makes it easy to add new characters.",
+	  "expression_1": "test_assets_v02/KingdomA_portrait_test",
+	  "line_1": "Simply add new TextureRect nodes ending with 'PortraitStandIn' to add more characters.",
+	  "expression_2": "test_assets_v02/KingdomA_portrait_test",
+	  "line_2": "The system will automatically detect and map them!"
+	},
+	"player_1": {
+	  "expression_0": "test_assets_v02/Player_portrait_test",
+	  "line_0": "To add a new character like Kingdom B, just add 'KingdombPortraitStandIn' node.",
+	  "expression_1": "test_assets_v02/Player_portrait_test",
+	  "line_1": "Then add dialogue entries like 'kingdomb_0', 'kingdomb_1', etc. in your JSON.",
+	  "expression_2": "test_assets_v02/Player_portrait_test",
+	  "line_2": "The system handles the rest automatically!"
+	},
+	"kingdoma_1": {
+	  "expression_0": "test_assets_v02/KingdomA_portrait_test",
+	  "line_0": "This template keeps all the working features you loved.",
+	  "expression_1": "test_assets_v02/KingdomA_portrait_test",
+	  "line_1": "But now it's super easy to create new scenes quickly!",
+	  "expression_2": "test_assets_v02/KingdomA_portrait_test",
+	  "line_2": "Happy game creating!"
+	}
+  }
+} 

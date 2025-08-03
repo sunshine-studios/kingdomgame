@@ -1,0 +1,36 @@
+{
+  "portraitDialogue": {
+    "player_0": {
+      "expression_0": "test_assets_v02/Player_portrait_test",
+      "line_0": "Welcome, young one. I see you have found your way to our humble dwelling.",
+      "expression_1": "test_assets_v02/Player_portrait_test",
+      "line_1": "This is Luna, my assistant. She's been quite eager to meet you.",
+      "expression_2": "test_assets_v02/Player_portrait_test",
+      "line_2": "Together, we shall embark on a most extraordinary journey."
+    },
+    "kingdoma_0": {
+      "expression_0": "test_assets_v02/KingdomA_portrait_test",
+      "line_0": "Oh my! You're finally here! I've been waiting for ages!",
+      "expression_1": "test_assets_v02/KingdomA_portrait_test",
+      "line_1": "Merlin has told me so much about you. Are you ready for an adventure?",
+      "expression_2": "test_assets_v02/KingdomA_portrait_test",
+      "line_2": "I promise it will be the most magical experience you've ever had!"
+    },
+    "player_1": {
+      "expression_0": "test_assets_v02/Player_portrait_test",
+      "line_0": "Now, before we begin, there are a few things you must understand.",
+      "expression_1": "test_assets_v02/Player_portrait_test",
+      "line_1": "Magic is not just about waving wands and casting spells.",
+      "expression_2": "test_assets_v02/Player_portrait_test",
+      "line_2": "It requires wisdom, patience, and above all, a pure heart."
+    },
+    "kingdoma_1": {
+      "expression_0": "test_assets_v02/KingdomA_portrait_test",
+      "line_0": "But don't worry too much about all that serious stuff!",
+      "expression_1": "test_assets_v02/KingdomA_portrait_test",
+      "line_1": "We'll have lots of fun learning together!",
+      "expression_2": "test_assets_v02/KingdomA_portrait_test",
+      "line_2": "And I'll be right here to help you every step of the way!"
+    }
+  }
+} 

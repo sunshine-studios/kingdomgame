@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjijvpgxawuiu"]
+
+[ext_resource type="Script" uid="uid://c5lf6uu0evvr0" path="res://scenes/diplomacyscreen.gd" id="1_bq017"]
+
+[node name="diplomacyscreen" type="Node2D"]
+script = ExtResource("1_bq017")
+
+[node name="BackButton" type="Button" parent="."]
+z_index = 1
+offset_left = 22.0
+offset_top = 15.0
+offset_right = 163.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+text = "Back Button!"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

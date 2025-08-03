@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfk8fxrqp6bug"]
+
+[ext_resource type="Script" uid="uid://f4rrgm885xwt" path="res://scripts/Chapter01/Chapter01_Scene01.gd" id="1_bc5og"]
+[ext_resource type="Texture2D" path="res://textures/scene01_backgroundtest.png" id="1_qvosf"]
+[ext_resource type="Texture2D" uid="uid://w8c5g44ku2ey" path="res://textures/test_assets_v02/Player_portrait_test.png" id="3_ddp8g"]
+[ext_resource type="Texture2D" uid="uid://d1ikxgs52yebl" path="res://textures/test_assets_v02/KingdomA_portrait_test.png" id="4_bw1x0"]
+
+[sub_resource type="Theme" id="Theme_bc5og"]
+default_font_size = 32
+
+[node name="Chapter01Scene01" type="Node2D"]
+script = ExtResource("1_bc5og")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -4.0
+offset_right = 1672.0
+offset_bottom = 936.0
+texture = ExtResource("1_qvosf")
+expand_mode = 2
+
+[node name="MerlinPortraitStandIn" type="TextureRect" parent="."]
+offset_left = -250.0
+offset_top = 243.0
+offset_right = 966.0
+offset_bottom = 1075.0
+texture = ExtResource("3_ddp8g")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LunaPortraitStandIn" type="TextureRect" parent="."]
+offset_left = 671.0
+offset_top = 242.0
+offset_right = 1887.0
+offset_bottom = 1074.0
+texture = ExtResource("4_bw1x0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="DialogueBox" type="Panel" parent="UILayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 31.0
+offset_top = -176.0
+offset_right = 1531.0
+offset_bottom = -26.0
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueText" type="RichTextLabel" parent="UILayer/DialogueBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_bc5og")
+bbcode_enabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueButton" type="Button" parent="UILayer/DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.002
+anchor_top = 0.033
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.0500002
+offset_right = 3.00012
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true

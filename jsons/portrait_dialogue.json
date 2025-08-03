@@ -1,0 +1,27 @@
+{
+  "portraitDialogue": {
+	"0": {
+	  "expression_0": "character_happy",
+	  "line_0": "Hello there! Welcome to my world.",
+	  "expression_1": "character_thoughtful",
+	  "line_1": "I have something important to tell you...",
+	  "expression_2": "character_excited",
+	  "line_2": "This dialogue system supports typewriter effects and portrait changes!"
+	},
+	"1": {
+	  "expression_0": "character_sad",
+	  "line_0": "Sometimes I feel a bit melancholy.",
+	  "expression_1": "character_hopeful",
+	  "line_1": "But then I remember there's always hope!",
+	  "line_2": "What do you think about that?"
+	},
+	"2": {
+	  "expression_0": "character_angry",
+	  "line_0": "I can't believe this happened!",
+	  "expression_1": "character_calm",
+	  "line_1": "But I suppose I should stay calm and think this through.",
+	  "expression_2": "character_determined",
+	  "line_2": "Yes, I know exactly what I need to do now."
+	}
+  }
+} 
